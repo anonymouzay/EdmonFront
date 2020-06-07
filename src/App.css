@@ -1,0 +1,264 @@
+:root{
+  --mainBack:#f7f7f7;
+  --mainCardBack:#eeeeee;
+  --dark:#393e46;
+  --lightGrey:#929aab;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+body{
+  background-color: var(--mainBack);
+}
+.generalImg{
+  width:100%;
+  height: 100%;
+}
+
+/* Navabar */
+
+.Navbar{
+  background-color: var(--dark);
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.NavbarItem{
+  background-color: var(--lightGrey);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-box-shadow: 0rem 0rem 0rem 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0rem 0rem 0rem 0px rgba(0,0,0,0.75);
+  box-shadow: 0rem 0rem 0rem 0px rgba(0,0,0,0.75);
+  position: relative;
+  bottom: 0rem;
+  right: 0rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.NavbarItem:hover{
+  -webkit-box-shadow: 0.25rem 0.2rem 0.25rem 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0.25rem 0.2rem 0.25rem 0px rgba(0,0,0,0.75);
+  box-shadow: 0.25rem 0.2rem 0.25rem 0px rgba(0,0,0,0.75);
+  right: 0.25rem;
+  bottom: 0.2rem;
+}
+
+.NavbarLink{
+  color: var(--mainBack);
+}
+
+/* Books */
+
+.BooksBody{
+  min-height: 100vh;
+  background-color: var(--mainBack);
+  width: 100%;
+  height: auto;
+}
+
+.BooksBodyTitleCont{
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:  2rem 0 ;
+}
+
+.BooksBodyTitle{
+  color: var(--dark);
+  text-transform: capitalize;
+}
+
+.BooksCont{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Loading */
+
+.LoadingCont{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoadingInner{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Card */
+
+.CardBody{
+  min-width: 14.5rem;
+  height: 18.75rem;
+  margin: 1rem 0;
+  background-color: var(--mainCardBack);
+}
+
+.CardBodyHeader{
+  width: 100%;
+  height: 20%;
+  background-color: var(--dark);
+  color: var(--mainBack);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.CardBodyInfo{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.CardBodyInfoRow{
+  width: 80%;
+  padding: 0.2rem 0.4rem;
+  background-color: var(--lightGrey);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CardSpecialInfo{
+  color: var(--mainBack);
+  font-weight: 700;
+  margin-left: 0.2rem;
+}
+
+.CardBodyBtns{
+  background-color: var(--dark);
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding:  0 1rem;
+}
+
+.CardBodyBtn{
+  background-color: var(--lightGrey);
+  padding: 0.2rem 0.4rem;
+  color: var(--mainCardBack);
+}
+
+/* Book */
+
+.BookWrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--mainBack) ;
+}
+
+.BookBodyHeader{
+  background-color: var(--lightGrey);
+  margin: 0rem;
+  border-radius:  0 0rem 1rem 1rem;
+  height: 4rem;
+}
+
+.BookInfo{
+  width: 100%;
+  height: calc(100% - 4rem);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.FormWrapper, .BookInfoWrapper{
+  min-width: 25.7rem;
+  width: 50%;
+  background-color: var(--mainCardBack);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BookInfoWrapper{
+  background-color: var(--mainBack);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+ 
+.BookInfoWrapper .CardBodyInfoRow{
+  padding: 1rem 0.5rem;
+  justify-content: center;
+}
+
+/* Form */
+
+.FormInner{
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.FormTitle{
+  color:var(--dark);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+.Form{
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.FormInput{
+  margin: 1rem 0 ;
+  width: 80%;
+  padding: 0.5rem 1rem;
+}
+
+.FormBtn{
+  padding: 0.5rem 1rem;
+}
+
+/* Seacrh */
+
+.SearchInner{
+  width: 100%;
+  height:7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Search{
+  width: 70%;
+  padding: 0.5rem 1rem;
+  border-radius: 1.4rem;
+  border: 0.125rem solid var(--dark);
+}
